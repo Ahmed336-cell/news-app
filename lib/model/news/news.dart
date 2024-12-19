@@ -16,6 +16,21 @@ class NewsArt{
       required this.urlToImage,
       required this.publishedAt});
 
+//
+//   String author = json['author'] ?? "غير معروف";
+//   String description = json['description'] ?? "لا توجد تفاصيل";
+//   DateTime parsedDate = DateTime.parse(json['publishedAt']);
+//   String formattedDate = DateFormat('yyyy-MM-dd – kk:mm').format(parsedDate);
+//
+//   NewsArt news = NewsArt(
+//     title: json['title'],
+//     author: author,
+//     url: json['url'],
+//     description: description,
+//     urlToImage: json['urlToImage'] ?? "رابط صورة افتراضي",
+//     publishedAt: formattedDate,
+//   );
+
   factory NewsArt.fromJson(Map<String, dynamic> json){
 
       DateTime parsedDate = DateTime.parse(json['publishedAt']);
